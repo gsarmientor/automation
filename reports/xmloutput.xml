@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="12" tests="41" time="369.157">
+ <testsuite name="Continuum Regression - 1. Login Test suite" timestamp="2018-08-23T15:41:19" hostname="localhost" time="11.13" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 1. Login Test suite" name="1. should validate elements at Login Page" time="0.885" />
+  <testcase classname="Continuum Regression - 1. Login Test suite" name="2. should validate user can access with correct credentials" time="2.196" />
+ </testsuite>
+ <testsuite name="Continuum Regression - 2. Admin pages 
+" timestamp="2018-08-23T15:41:31" hostname="localhost" time="43.095" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 2. Admin pages 
+" name="1. should validate pages in Admin menu" time="40.169" />
+ </testsuite>
+ <testsuite name="Continuum Regression - 4. Task page 
+" timestamp="2018-08-23T15:42:14" hostname="localhost" time="140.509" errors="0" tests="7" skipped="1" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.1 validate elements at task admin page" time="0.198" />
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.2 validate a task can make a winrm connection" time="62.447" />
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.3 validate copy task" time="6.035" />
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.4 export and import a task" time="12.811" />
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.5 delete a task" time="2.967" />
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.6 make an SSH connection" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="Continuum Regression - 4. Task page 
+" name="4.7 make an HTTP request" time="49.289" />
+ </testsuite>
+ <testsuite name="Continuum Regression - 5. Progression page 
+" timestamp="2018-08-23T15:44:34" hostname="localhost" time="8.205" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 5. Progression page 
+" name="5.1 validate items on the &apos;Add New&apos; dialog" time="0.595" />
+  <testcase classname="Continuum Regression - 5. Progression page 
+" name="5.2 Add new Progression" time="2.03" />
+  <testcase classname="Continuum Regression - 5. Progression page 
+" name="5.3 open and validate items on the Progression Details tab" time="0.087" />
+  <testcase classname="Continuum Regression - 5. Progression page 
+" name="5.4 add Phases to Progression" time="2.445" />
+ </testsuite>
+ <testsuite name="Continuum Regression - 4. Package page 
+" timestamp="2018-08-23T15:44:42" hostname="localhost" time="31.126" errors="0" tests="6" skipped="0" disabled="0" failures="12">
+  <testcase classname="Continuum Regression - 4. Package page 
+" name="4.1 validate items on the &apos;Add New&apos; dialog" time="5.004">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, input[id=&quot;username&quot;])"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, input[id="username"])
+    at elementArrayFinder.getWebElements.then (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:814:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:831:22)
+    at LoginModule.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:212:86)
+    at step (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:32:23)
+    at Object.next (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:13:53)
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:3:12)
+    at LoginModule.setUsername (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:209:16)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:63:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: Wait timed out after 5002ms"><![CDATA[TimeoutError: Wait timed out after 5002ms
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:88:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Continuum Regression - 4. Package page 
+" name="4.2 add new Package" time="5.358">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, input[id=&quot;username&quot;])"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, input[id="username"])
+    at elementArrayFinder.getWebElements.then (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:814:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:831:22)
+    at LoginModule.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:212:86)
+    at step (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:32:23)
+    at Object.next (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:13:53)
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:3:12)
+    at LoginModule.setUsername (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:209:16)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:63:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: Wait timed out after 5002ms"><![CDATA[TimeoutError: Wait timed out after 5002ms
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:98:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Continuum Regression - 4. Package page 
+" name="4.3 validate Package Details" time="2.341">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, input[id=&quot;username&quot;])"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, input[id="username"])
+    at elementArrayFinder.getWebElements.then (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:814:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:831:22)
+    at LoginModule.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:212:86)
+    at step (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:32:23)
+    at Object.next (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:13:53)
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:3:12)
+    at LoginModule.setUsername (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:209:16)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:63:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: Wait timed out after 2003ms"><![CDATA[TimeoutError: Wait timed out after 2003ms
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:108:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Continuum Regression - 4. Package page 
+" name="4.4 select a Package" time="2.354">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, input[id=&quot;username&quot;])"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, input[id="username"])
+    at elementArrayFinder.getWebElements.then (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:814:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:831:22)
+    at LoginModule.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:212:86)
+    at step (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:32:23)
+    at Object.next (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:13:53)
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:3:12)
+    at LoginModule.setUsername (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:209:16)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:63:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: Wait timed out after 2002ms"><![CDATA[TimeoutError: Wait timed out after 2002ms
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:118:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Continuum Regression - 4. Package page 
+" name="4.5 associate a Progression" time="8.346">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, input[id=&quot;username&quot;])"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, input[id="username"])
+    at elementArrayFinder.getWebElements.then (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:814:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:831:22)
+    at LoginModule.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:212:86)
+    at step (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:32:23)
+    at Object.next (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:13:53)
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:3:12)
+    at LoginModule.setUsername (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:209:16)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:63:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: Wait timed out after 5003ms"><![CDATA[TimeoutError: Wait timed out after 5003ms
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:128:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Continuum Regression - 4. Package page 
+" name="4.6 associate an Artifact" time="5.341">
+   <failure type="exception" message="Failed: No element found using locator: By(css selector, input[id=&quot;username&quot;])"><![CDATA[NoSuchElementError: No element found using locator: By(css selector, input[id="username"])
+    at elementArrayFinder.getWebElements.then (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:814:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/built/element.js:831:22)
+    at LoginModule.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:212:86)
+    at step (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:32:23)
+    at Object.next (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:13:53)
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:3:12)
+    at LoginModule.setUsername (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/pageobjects/login/login_module.po.js:209:16)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:63:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: Wait timed out after 5001ms"><![CDATA[TimeoutError: Wait timed out after 5001ms
+    at /Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:138:5)
+    at addSpecsToSuite (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/gustavosarmiento/qa/ctm-protractor/continuumautotests/tmp/src/continuum/testcases/package/package_regression.spec.js:53:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Continuum Regression - 6. User Manage page 
+" timestamp="2018-08-23T15:45:13" hostname="localhost" time="52.845" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 6. User Manage page 
+" name="6.1 validate elements at admin user page" time="0.146" />
+  <testcase classname="Continuum Regression - 6. User Manage page 
+" name="6.2 validate elements at modify user page" time="16.937" />
+  <testcase classname="Continuum Regression - 6. User Manage page 
+" name="6.3 create new administrator user" time="6.574" />
+  <testcase classname="Continuum Regression - 6. User Manage page 
+" name="6.4 delete new administrator user" time="5.536" />
+  <testcase classname="Continuum Regression - 6. User Manage page 
+" name="6.5 copy Administrator user" time="7.981" />
+  <testcase classname="Continuum Regression - 6. User Manage page 
+" name="6.6 filter by username" time="8.865" />
+ </testsuite>
+ <testsuite name="Continuum Regression - 4. Team page 
+" timestamp="2018-08-23T15:46:06" hostname="localhost" time="22.713" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 4. Team page 
+" name="1. Validate elements at Team admin page Create Team" time="0.14" />
+  <testcase classname="Continuum Regression - 4. Team page 
+" name="2. Create Team" time="5.362" />
+  <testcase classname="Continuum Regression - 4. Team page 
+" name="3. Validate tabs after Team is created" time="0.469" />
+  <testcase classname="Continuum Regression - 4. Team page 
+" name="4. Edit &amp; Update Team1 Data" time="2.318" />
+  <testcase classname="Continuum Regression - 4. Team page 
+" name="5. Create Team2" time="6.681" />
+  <testcase classname="Continuum Regression - 4. Team page 
+" name="6. Edit &amp; Update Team2 Data" time="2.313" />
+ </testsuite>
+ <testsuite name="Continuum Regression - 3. Project page 
+" timestamp="2018-08-23T15:46:29" hostname="localhost" time="59.534" errors="0" tests="9" skipped="1" disabled="0" failures="0">
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.1 validate items at Project Page" time="0.036" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.2 create new project Manually with Source type" time="15.271" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.2.1 tabs are present for new project Source type" time="1.301" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.3 create new project Manually with Integration type" time="15.377" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.3.1 tabs are present for new Integration project type" time="1.074" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.4 create new project Manually with General type" time="15.441" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.4.1 tabs are present for new Integration project type" time="1.176" />
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.5 create a new project using the wizzard" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="Continuum Regression - 3. Project page 
+" name="3.6 Copy project to a new one" time="3.186" />
+ </testsuite>
+</testsuites>
